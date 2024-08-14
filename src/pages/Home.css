@@ -1,0 +1,73 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.25rem;
+
+  h1 {
+    font-weight: bold;
+  }
+
+  hr {
+    margin: 0;
+  }
+
+  label {
+    display: flex;
+    gap: 0.5rem;
+
+    * {
+      flex-shrink: 1;
+      min-width: 0;
+      padding: 0.5rem;
+    }
+
+    span,
+    button {
+      flex-shrink: 0;
+    }
+
+    input[type="text"] {
+      flex-basis: 100%;
+    }
+
+    button {
+      aspect-ratio: 1;
+    }
+  }
+
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    li {
+      display: flex;
+      gap: 0.5rem;
+
+      * {
+        padding: 0.5rem;
+      }
+
+      input[type="number"] {
+        flex-shrink: 1;
+        min-width: 0;
+      }
+
+      input[type="text"] {
+        flex-basis: 100%;
+      }
+
+      button {
+        aspect-ratio: 1;
+      }
+    }
+  }
+
+  & > button {
+    padding: 1rem;
+  }
+}
